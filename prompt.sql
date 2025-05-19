@@ -1,0 +1,1 @@
+select s.name, count(t.killer) as kills, count(s.target_id) as total, count(t.killer) * 1.0 / count(s.target_id) as accuracy from shots s left join targets t on s.name = t.killer group by s.name order by accuracy desc;
