@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/bin/bash
 
 parse_args() {
     while [[ $# -gt 0 ]]; do

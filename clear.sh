@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/bin/bash
 
 rm "./rls/storage/readed_files_1.txt"
 rm "./rls/storage/readed_files_2.txt"

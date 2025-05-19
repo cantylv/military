@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/bin/bash
 # Version 3.1
 (( BASH_VERSINFO[0] < 4 )) && exit 1
 

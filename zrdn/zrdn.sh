@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+#!/bin/bash
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BASE="$SCRIPT_DIR/.."
@@ -160,9 +160,9 @@ while true; do
         fi
     done
 
-    # target_files=($(find "$TARGETS_DIR" -type f -printf "%T@ %p\n" | sort -nr | head -n 100 | cut -d' ' -f2-))
+    target_files=($(find "$TARGETS_DIR" -type f -printf "%T@ %p\n" | sort -nr | head -n 100 | cut -d' ' -f2-))
     # target_files=($(find "$TARGETS_DIR" -type f -exec stat -c "%Y %n" {} + | sort -nr | head -n 100 | cut -d ' ' -f2-))
-    target_files=($(find "$TARGETS_DIR" -type f -exec stat -f "%m %N" {} + | sort -nr | head -n 100 | cut -d ' ' -f2-))
+    # target_files=($(find "$TARGETS_DIR" -type f -exec stat -f "%m %N" {} + | sort -nr | head -n 100 | cut -d ' ' -f2-))
 
     seen_targets=() # Цели, замеченные в текущей итерации
 
